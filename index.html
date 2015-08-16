@@ -1,46 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset='utf-8'>
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<meta name="description" content="Ming Luo : Portfolio Website">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-	<link rel="stylesheet" type="text/css" media="screen" href="css/general.css">
+	<title>Ming's personal website</title>
 
-	<title>Ming Luo</title>
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+	<link href="css/owl.theme.css" rel="stylesheet" media="screen" />	
+	<link href="css/animate.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
 </head>
-
-<body>
-
-	<!-- HEADER -->
-	<div id="header_wrap" class="outer">
-		<header class="inner">
-			<h1 id="project_title">Ming Luo</h1>
-			<h2 id="project_tagline">Portfolio Website</h2>
-		</header>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
 	</div>
 
-	<!-- MAIN CONTENT -->
-	<div id="main_content_wrap" class="outer">
-		<section id="main_content" class="inner">
-		</section>
-	</div>
+	<!-- Section: intro -->
+	<section id="intro" class="intro">
+		<div class="slogan">
+			<a href="index.html"><img src="img/logo.png" alt="" /></a>
+		</div>
+		<div class="page-scroll">
+			<a href="#about">
+				<i class="fa fa-angle-down fa-5x animated"></i>
+			</a>
+		</div>
+	</section>
+	<!-- /Section: intro -->
+	
+	<!-- Navigation -->
+	<div id="navigation">
+		<nav class="navbar navbar-custom" role="navigation">
+			  <div class="container">
+					<div class="row">
+						  <div class="col-md-12">
+		 
+							  <!-- Brand and toggle get grouped for better mobile display -->
+							  <div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+									<i class="fa fa-bars"></i>
+									</button>
+							  </div>
 
-	<!-- FOOTER	-->
-	<div id="footer_wrap" class="outer">
-		<footer class="inner">
-		</footer>
-	</div>
+							  <!-- Collect the nav links, forms, and other content for toggling -->
+							  <div class="collapse navbar-collapse" id="menu">
+									<ul class="nav navbar-nav">
+										  <li class="active"><a href="#intro">Home</a></li>
+										  <li><a href="#about">About</a></li>
+										  <li><a href="#contact">Contact</a></li>
+									</ul>
+							  </div>
+							  <!-- /.Navbar-collapse -->
+						  </div>
+					</div>
+			  </div>
+			  <!-- /.container -->
+		</nav>
+	</div> 
+	<!-- /Navigation -->  
 
-	<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-		try {
-			var pageTracker = _gat._getTracker("UA-54669626-2");
-		pageTracker._trackPageview();
-		} catch(err) {}
-	</script>
+	<!-- Section: about -->
+	<section id="about" class="home-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+
+					<div class="section-heading text-center">
+					<div class="wow bounceInDown" data-wow-delay="0.2s">
+						<h2>My name is Ming</h2>
+					</div>
+					<p class="wow bounceInUp" data-wow-delay="0.3s">I'm a 21 year old Computer Science Student</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/img1.jpg" class="img-responsive img-rounded" alt="" />
+				</div>		
+				<div class="col-md-6">
+					<p><strong>I'm looking to write high impact code with a top-level software company!</strong></p>
+					<p>
+					I would make a great addition to your company! <br><br>
+
+					I'll also write more to this description ^_^; <br><br>
+
+					<-- that photo over there is too tall not to add more text right here!
+					</p>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<!-- /Section: about -->
+	
+	<!-- Section: separator -->
+	<section id="separator" class="home-section parallax text-center" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 col-md-3">
+					<div class="align-center txt-shadow">
+						<div class="icon">
+							<i class="fa fa-graduation-cap fa-5x"></i>
+						</div>
+					<span class="color-white">Bachelor of Science</span>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3">
+					<div class="align-center txt-shadow">
+						<div class="icon">
+							<i class="fa fa-book fa-5x"></i>
+						</div>
+					<span class="color-white">Tutor, TA, and Lab Instructor</span>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3">
+					<div class="align-center txt-shadow">
+						<div class="icon">
+							<i class="fa fa-laptop fa-5x"></i>
+						</div>
+					<span class="color-white">Hackathon Hacker</span>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3">
+					<div class="align-center txt-shadow">
+						<div class="icon">
+							<i class="fa fa-smile-o fa-5x"></i>
+						</div>
+					<span class="color-white">Cheery Software Developer</span>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<!-- /Section: separator -->
+
+	<!-- Section: contact -->
+	<section id="contact" class="home-section text-center">
+		<div class="heading-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-offset-2">
+						
+						<div class="section-heading">
+							<div class="wow bounceInDown" data-wow-delay="0.4s">
+								<h2><i class="fa fa-envelope animated"> Email me!</i></h2>
+							</div>
+							<p class="wow lightSpeedIn" data-wow-delay="0.3s">
+							I <b>will</b> get back to you <br>
+							luom3@rpi.edu
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-offset-2">
+					<!--div class="form-wrapper marginbot-50">
+						<form id="contact-form">
+							<div class="row">
+								<div class="form-group">
+									<label for="name">
+										Name</label>
+									<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+								</div>
+								<div class="form-group">
+									<label for="email">
+										Email Address</label>
+										<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+								</div>
+								<div class="form-group">
+									<label for="subject">
+										Subject</label>
+									<select id="subject" name="subject" class="form-control" required="required">
+										<option value="na" selected="">Choose One:</option>
+										<option value="service">Open position</option>
+										<option value="suggestions">Application request</option>
+										<option value="product">Straight-up job offer</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="name">
+										Message</label>
+									<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+										placeholder="Message"></textarea>
+								</div>
+								<button type="submit" class="btn btn-skin btn-block" id="btnContactUs">
+									Send Message</button>
+							</div>
+						</form>
+					</div-->
+				</div>
+			</div>	
+		</div>
+	</section>
+	<!-- /Section: contact -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<p>&copy;Copyright 2014 . Alice Lonely . design by <a href="">Bootstraptaste</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+	<!-- Core JavaScript Files -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/custom.js"></script>
 </body>
 </html>
