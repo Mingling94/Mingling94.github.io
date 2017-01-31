@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+  <style>
+    #urlinput {
+      display: block;
+    }
+  </style>
+  <title>Welcome to Ming's Site</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+  <script src="./node_modules/linkifyjs/dist/linkify.min.js" defer></script>
+  <script src="./node_modules/linkifyjs/dist/linkify-jquery.min.js" defer></script>
+  <script src="./js/urlpreview.js" defer></script>
 </head>
 <body>
-  <p>Go on, type a URL!</p>
-  <input id='box'>
-  </input>
+  <p id='text'>Go on, type a URL!</p>
+  <p id='url'></p>
+  <input id='urlinput'></input>
+  <iframe id='preview' src='' style='border:none'></iframe>
 </body>
 </html>
