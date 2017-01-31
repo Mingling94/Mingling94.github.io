@@ -2,15 +2,17 @@
 function parseForUrls(text) {
   var urls = linkify.find(text);
 
+  // Determine if any links
+  if (urls === null || urls.length === 0) {
+    $('#url').text('No links');
+    return;
+  }
+
   // Determine if valid
   var url;
   var text;
   var type = urls[0].type;
-  if (urls === null) {
-    text = 'Something went wrong!';
-  } else if (urls.length === 0) {
-    text = 'No links';
-  } else if (urls.length === 1 && type != 'url') {
+  if (urls.length === 1 && type != 'url') {
     text = `That's not a url, it's a ${type} link!`;
   } else if (urls.length > 1) {
     text = 'Too many urls';
