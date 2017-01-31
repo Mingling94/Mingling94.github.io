@@ -24,5 +24,5 @@ function parseForUrls(text) {
 }
 
 $('#urlinput').on('input', function() {
-  parseForUrls((this).val());
+  parseForUrls($(this).val());
 });

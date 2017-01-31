@@ -17,6 +17,5 @@
   },
   "homepage": "https://github.com/Mingling94/Mingling94.github.io#readme",
   "dependencies": {
-    "linkify": "^0.2.1"
   }
 }
