@@ -2,15 +2,26 @@
 <html lang='en'>
 <head>
   <style>
-    html, body, iframe {
+    html, body {
       height: 100%;
       width: 100%;
     }
-    iframe {
+    html, body, iframe, p {
+      margin: 0;
+      padding: 0;
       border: none;
     }
-    #urlinput {
-      display: block;
+    iframe {
+      /*
+         25px is an approximation
+         TODO: Find way for body to take up exactly the remaining heigh. This
+         varies because browsers inject their own stylings
+       */
+      height: calc(100% - 25px);
+      width: 100%;
+    }
+    .inline {
+      display: inline-block;
     }
   </style>
 
@@ -22,9 +33,9 @@
   <script src="./js/urlpreview.js?version=1" defer></script>
 </head>
 <body>
-  <p id='text'>Go on, type a URL!</p>
-  <p id='url'></p>
-  <input id='urlinput'></input>
+  <p class='inline' id='text'>Go on, type a URL!</p>
+  <input class='inline' id='urlinput'></input>
+  <p class='inline' id='url'></p>
   <iframe id='preview' src=''></iframe>
 </body>
 </html>
