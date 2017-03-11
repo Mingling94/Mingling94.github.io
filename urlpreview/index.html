@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    html, body, iframe, p {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    iframe {
+      /*
+         25px is an approximation
+         TODO: Find way for body to take up exactly the remaining heigh. This
+         varies because browsers inject their own stylings
+       */
+      height: calc(100% - 25px);
+      width: 100%;
+    }
+    .inline {
+      display: inline-block;
+    }
+  </style>
+
+  <title>Welcome to Ming's Site</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+  <script src="./js/linkify.min.js" defer></script>
+  <script src="./js/linkify-jquery.min.js" defer></script>
+  <script src="./js/yqlmagic.js?version=2" defer></script>
+  <script src="./js/urlpreview.js?version=2" defer></script>
+</head>
+<body>
+  <p class='inline' id='text'>Go on, type a URL!</p>
+  <input class='inline' id='urlinput'></input>
+  <p class='inline' id='url'></p>
+  <iframe id='preview' src=''></iframe>
+</body>
+</html>
